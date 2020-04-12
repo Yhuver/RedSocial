@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instagram</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="icon" href="images/icon.png" />
+	
+</head>
+<body>
+
+<header>
+
+<div class="h-header">
+	<div class="h-logo"><a href="##"><img src="images/instagram.png" width="200" ></a></div>
+	<div class="h-search">
+		<form method="POST" action="buscar.php" onSubmit="return validarForm(this)">
+			<input type="text" placeholder="Buscar" class="search" name="palabra">
+			
+		</form>
+	</div>
+	<div class="h-account">
+
+		<form action="PerfilAmigo - copia.php">
+			<button style="border: 2px solid transparent;text-decoration: none; padding: 0;
+				background-color: transparent;
+				color: #007bff; position: relative; left: -35px; top: 6px;">
+				<img src="images/perfil.png" class="i-icon">
+			</button>
+
+			<a href="##" style="position: relative; bottom: 21px; left: 90px">
+				<img src="images/mail.png" class="i-icon" width="55px">
+			</a>
+		</form>
+
+		<form action="mensaje/mensaje2.php">
+			<button style="border: 2px solid transparent;text-decoration: none; padding: 0;
+				background-color: transparent;
+				color: #007bff; position: relative; left: 40px; bottom: 50px" type="submit">
+				<img src="images/enviarMensajes.png" class="i-icon" width="50px">
+			</button>
+		</form>
+
+		<form action="publicacion/publicacion.php">
+			<button style="border: 2px solid transparent;text-decoration: none; padding: 0;
+				background-color:transparent;
+				color: #007bff; position: relative; bottom: 78px; left: 70px;">
+				<img src="images/publicar.png" class="i-icon" width="50px">
+			</button>
+		</form>
+
+			<a href="logout.php"  style="position: relative; bottom: 105px; left: 250px">
+				<img src="images/close.png" class="i-icon" width="50px">
+			</a>
+	</div>
+</div>
+
+
+
+<div class="container">
+<h3 class=" text-center">Mensajes</h3>
+<div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <h4>Recientes</h4>
+            </div>
+            <div class="srch_bar">
+              <div class="stylish-input-group">
+                <input type="text" class="search-bar"  placeholder="Buscar" >
+                <span class="input-group-addon">
+                <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                </span> </div>
+            </div>
+          </div>
+          <div class="inbox_chat">
+            <div class="chat_list active_chat">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Ejemplo 1 <span class="chat_date">Fecha</span></h5>
+                  <p>La conversacion que tengan debe ir aqui</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src=""> </div>
+                <div class="chat_ib">
+                  <h5>Ejemplo 2 <span class="chat_date">Fecha</span></h5>
+                  <p>La conversacion que tengan debe ir aqui</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+
+        </div>
+        <div class="mesgs">
+          <div class="msg_history">
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>mensajes en el chat</p>
+                  <span class="time_date"> 11:01 AM    |    June 9</span></div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>aqui va lo que el dueño de la cuenta contesta</p>
+                <span class="time_date"> 11:01 AM    |    June 9</span> </div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Test, which is a new approach to have</p>
+                  <span class="time_date"> 11:01 AM    |    Yesterday</span></div>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="type_msg">
+            <div class="input_msg_write">
+              <input type="text" class="write_msg" placeholder="Escribe Aqui el mensaje" />
+              <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+</div>
+
+
+	<div class="footer">
+		<footer>Instagram©2020 </footer>
+	</div>
+
+
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

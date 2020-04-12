@@ -1,0 +1,515 @@
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #FAFAFA; 
+  font-family: 'Segoe UI';
+}
+
+#wrapper {
+  width: 70%;
+  height: 80%;
+  overflow: hidden;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.w-left {
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+
+.w-right {
+  width: 50%;
+  float: right;
+}
+
+.main-content {
+  width: 250px;
+  margin: 10px auto;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  padding: 40px 50px;
+}
+
+.header {
+  border: 0px solid #000;
+  margin-bottom: 5px;
+}
+
+.header img {
+  height: 50px;
+  width: 175px;
+  margin: auto;
+  position: relative;
+  left: 40px;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.overlap-text {
+  position: relative;
+}
+
+.overlap-text a {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #003569;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 400;
+}
+
+.btn {
+  width: 100%;
+  background-color: #3897f0;
+  border: 1px solid #3897f0;
+  padding: 5px 12px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn:focus {
+    background-color: #C4E0FB;
+}
+
+.sub-content {
+  width: 250px;
+  margin: 10px auto;
+  border: 1px solid #e6e6e6;
+  padding: 35px 50px;
+  background-color: #fff;
+}
+
+.s-part {
+  text-align: center;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 400;
+  color: #333;
+}
+
+.s-part a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #3897f0;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 400;
+}
+
+.myButton {
+  background-color:#3e3ed6;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  padding:15px 41px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #2768b8;
+  border: 0px;
+}
+.myButton:hover {
+  background-color:#1e32b8;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+.button_white {
+  background-color: white;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  display:inline-block;
+  cursor:pointer;
+  color:#262626;
+  font-size:16px;
+  padding:6px 9px;
+  text-decoration:none;
+  border: 1px solid #DBDBDB;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 600;
+  line-height: 18px;
+}
+.button_white:active {
+  position:relative;
+  top:1px;
+}
+
+.button_blue {
+  background-color: #3897F0;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  display:inline-block;
+  cursor:pointer;
+  color:white;
+  font-size:16px;
+  padding:6px 9px;
+  text-decoration:none;
+  border: 0px solid #DBDBDB;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 600;
+  line-height: 18px;
+}
+.button_blue:active {
+  position:relative;
+  top:1px;
+}
+
+.button_edit_on {
+  background-color: white;
+  display:inline-block;
+  cursor:pointer;
+  color:#262626;
+  font-size:18px;
+  padding:20px 30px;
+  text-decoration:none;
+  border-left: 2px solid black;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 600;
+  line-height: 20px;
+}
+.button_edit {
+  background-color: white;
+  display:inline-block;
+  cursor:pointer;
+  color:#262626;
+  font-size:18px;
+  padding:20px 30px;
+  text-decoration:none;
+  border-left: 0px solid #999;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 400;
+  line-height: 20px;
+}
+.button_edit:hover {
+  background-color: white;
+  display:inline-block;
+  cursor:pointer;
+  color:#262626;
+  font-size:18px;
+  padding:20px 28px;
+  text-decoration:none;
+  border-left: 2px solid #999;
+  border-right: 0px;
+  border-top: 0px;
+  border-bottom: 0px;
+  font-family: 'Segoe UI', monospace;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* HOME */
+
+.h-header {
+  width: 100%; 
+  height: 85px; 
+  border-bottom: 1px 
+  solid #E6E6E6;
+  position: relative; 
+  background: #FFFFFF;
+  background: #b2ddeb;
+  background: -webkit-linear-gradient(bottom, #8CDBB9, #00bfff);
+  background: -o-linear-gradient(bottom, #8CDBB9, #00bfff);
+  background: -moz-linear-gradient(bottom, #8CDBB9, #00bfff);
+  background: linear-gradient(bottom,#8CDBB9, ##00bfff);
+  opacity: 0.5;
+
+}
+  .h-logo {
+    position: absolute; 
+    top: 10%; 
+    left: 10%;
+    height: 70%;
+    width: 20%;
+    text-align: center;}
+  .h-search {position: absolute; top: 30%; left: 35%; height: 90%; width: 30%; text-align: center;}
+  .h-account {position: absolute; top: 30%; left: 70%; height: 90%; width: 20%;}
+  .h-account a:link {text-decoration: none;}
+    .i-icon {padding: 0px 15px;}
+
+
+.h-content {width: 65%; margin: auto; margin-top: 70px;}
+  .h-left {width: 65%; float: left; margin-right: 5%;}
+    .hl-cont {width: 100%; margin-bottom: 60px; float: left; border: 1px solid #E6E6E6;}
+    .hl-top {width: 100%; height: 60px;}
+      .hl-profile {width: 10%; height: 60px; float: left; position: relative;}
+        .hl-pic {width: 100%; position: absolute; top: 12%; left: 10%;}
+      .hl-username {width: 90%; height: 60px; float: left; position: relative;}
+        .hl-name {width: 100%; height: 30px; float: left; color: #262626; position: absolute; top: 10%; font-weight: 600;}
+        .hl-name a:link{text-decoration: none; color: #262626; font-weight: 600;}
+        .hl-name a:visited{text-decoration: none; color: #262626; font-weight: 600;}
+        .hl-location {width: 100%; height: 30px; float: left; font-family: 'Segoe UI'; font-weight: 400; color: #262626; position: absolute; top: 50%; font-size: 12px;}
+      .hl-menu {width: 100%; margin-bottom: 60px; text-align: center;}
+        .hl-icon {width: 33.3%; float: left;}
+    .hl-middle {width: 100%;}
+    .hl-bottom {width: 100%; height: 30px; padding: 10px;}
+    .hl-section-likes {width: 100%; height: 44px;}
+    .hl-section-likes img {padding: 10px;}
+
+  .h-right {width: 30%; float: right;}      
+    .hr-top {width: 100%; height: 100px;}
+      .hr-profile {width: 30%; height: 100px; float: left; position: relative;}
+        .hr-pic {width: 100%; position: absolute; top: 12%; left: 10%;}
+      .hr-username {width: 70%; height: 100px; float: left; position: relative;}
+        .hr-name {width: 100%; height: 50px; float: left; color: #262626; position: absolute; top: 10%; font-weight: 600;}
+        .hr-name a:link{text-decoration: none; color: #262626; font-weight: 600;}
+        .hr-name a:visited{text-decoration: none; color: #262626; font-weight: 600;}
+        .hr-nombre {width: 100%; height: 50px; float: left; font-family: 'Segoe UI'; font-weight: 400; color: #999999; position: absolute; top: 35%; font-size: 12px;}
+    
+
+
+
+  /* SEARCH FORM */
+
+  .search {padding: 6px 40px; border-radius: 4px 4px 4px 4px; -moz-border-radius: 4px 4px 4px 4px; -webkit-border-radius: 4px 4px 4px 4px;
+border: 1px solid #DBDBDB; }
+
+
+/* TOP BAR CONFIRM */
+
+.topbarc {width: 100%; height: 30px; background-color: #66CCCC; text-align: center; padding-top: 10px;}
+
+ .topbarc a:link, a:visited{color: black; text-decoration: none;}
+ .topbarc a:hover{color: black; text-decoration: underline;}
+
+
+/* CAMBIAR INPUT POR IMAGEN */
+
+.image-upload > input {display: none;}
+.image-upload img {cursor: pointer;}
+
+
+/* CAMBIAR RADIO POR IMAGEN */
+
+.imgcheck{
+    position:relative;
+    display: inline-block;
+}
+  .imgcheck label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.imgcheck label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+.imgcheck label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+
+
+/* PERFIL */
+
+.p-top {width: 90%; height: 210px; margin: auto; clear: both;}
+  .p-foto {width: 30%; height: 210px; float: left;}
+    .p-foto img {margin-top: 20px; margin-left: 20px;}
+  .p-name {width: 70%; height: 60px; float: left;}
+    .p-user {margin-right: 4%; height: 60px; float: left; font-size: 32px; line-height: 32px; font-weight: 200;}
+    .p-editar {margin-right: 4%; height: 60px; float: left;}
+    .p-config {margin-right: 4%; height: 60px; float: left;}
+  .p-info {width: 70%; height: 40px; float: left;}
+    .p-infor {width: 33.3%; height: 40px; float: left; font-size: 18px; font-weight: 400; line-height: 18px; color: #262626;}
+  .p-nombre {width: 70%; height: 30px; float: left; font-size: 18px; font-weight: 600; line-height: 18px; color: #262626;}
+  .p-location {width: 70%; height: 30px; float: left; font-size: 18px; font-weight: 400; line-height: 18px; color: #262626;}
+  .p-description {width: 70%; height: 50px; float: left; font-size: 16px; font-weight: 400; line-height: 18px; color: #262626;}
+
+.p-mid {width: 100%; height: 210px; margin: auto; clear: both; padding-top: 10px;}
+  .p-pub {width: 300px; height: 300px; float: left; background-position: 20% 50%; background-repeat: no-repeat;
+   margin: 10px;}
+
+
+/* EDITAR PERFIL */
+
+.e-mid {width: 100%; height: 210px; margin: auto; clear: both; padding-top: 10px;}
+	.e-left {width: 29%; float: left; border-left: 1px solid #DBDBDB; border-top: 1px solid #DBDBDB; 
+		border-bottom: 1px solid #DBDBDB;}
+	.e-right {width: 70%; float: left; border: 1px solid #DBDBDB;}
+		.e-contenido {width: 80%; margin: auto; clear: both; padding: 30px;}
+			.e-title {width: 20%; float: left; font-weight: 600; color:#262626; font-size: 18px;}
+			.e-input {width: 80%; float: left; font-weight: 400; color:black; font-size: 22px; line-height: 22px}
+			.e-input p {width: 300px; padding: 5px; font-weight: bold; color:#3897F0; font-size: 14px;}
+			.e-input input {width: 300px; border: 1px solid #DBDBDB; padding: 5px; font-weight: 400; color:#262626; font-size: 17px;}
+			.e-input select {width: 150px; border: 1px solid #DBDBDB; padding: 5px; font-weight: 400; color:#262626; font-size: 17px;}
+			.e-but input {border: 1px solid #DBDBDB; padding: 5px; font-weight: 400; color:#262626; font-size: 17px;}
+
+.footer{
+  width: 100%; 
+  height: 55px; 
+  border-bottom: 1px 
+  solid #E6E6E6;
+  background: #FFFFFF;
+  background: #b2ddeb;
+  background: -webkit-linear-gradient(bottom, #8CDBB9, #00bfff);
+  background: -o-linear-gradient(bottom, #8CDBB9, #00bfff);
+  background: -moz-linear-gradient(bottom, #8CDBB9, #00bfff);
+  background: linear-gradient(bottom,#8CDBB9, ##00bfff);
+  opacity: 0.5;
+
+
+}
+
+
+/*mensajes*/
+ 
+ .container{max-width:1170px; margin:auto;}
+img{ max-width:100%;}
+.inbox_people {
+  background: #f8f8f8 none repeat scroll 0 0;
+  float: left;
+  overflow: hidden;
+  width: 40%; border-right:1px solid #c4c4c4;
+}
+.inbox_msg {
+  border: 1px solid #c4c4c4;
+  clear: both;
+  overflow: hidden;
+}
+.top_spac{ margin: 20px 0 0;}
+
+
+.recent_heading {float: left; width:40%;}
+.srch_bar {
+  display: inline-block;
+  text-align: right;
+  width: 60%; padding:
+}
+.headind_srch{ padding:10px 29px 10px 20px; overflow:hidden; border-bottom:1px solid #c4c4c4;}
+
+.recent_heading h4 {
+  color: #05728f;
+  font-size: 21px;
+  margin: auto;
+}
+.srch_bar input{ border:1px solid #cdcdcd; border-width:0 0 1px 0; width:80%; padding:2px 0 4px 6px; background:none;}
+.srch_bar .input-group-addon button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  padding: 0;
+  color: #707070;
+  font-size: 18px;
+}
+.srch_bar .input-group-addon { margin: 0 0 0 -27px;}
+
+.chat_ib h5{ font-size:15px; color:#464646; margin:0 0 8px 0;}
+.chat_ib h5 span{ font-size:13px; float:right;}
+.chat_ib p{ font-size:14px; color:#989898; margin:auto}
+.chat_img {
+  float: left;
+  width: 11%;
+}
+.chat_ib {
+  float: left;
+  padding: 0 0 0 15px;
+  width: 88%;
+}
+
+.chat_people{ overflow:hidden; clear:both;}
+.chat_list {
+  border-bottom: 1px solid #c4c4c4;
+  margin: 0;
+  padding: 18px 16px 10px;
+}
+.inbox_chat { height: 550px; overflow-y: scroll;}
+
+.active_chat{ background:#ebebeb;}
+
+.incoming_msg_img {
+  display: inline-block;
+  width: 6%;
+}
+.received_msg {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  vertical-align: top;
+  width: 92%;
+ }
+ .received_withd_msg p {
+  background: #ebebeb none repeat scroll 0 0;
+  border-radius: 3px;
+  color: #646464;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px 10px 5px 12px;
+  width: 100%;
+}
+.time_date {
+  color: #747474;
+  display: block;
+  font-size: 12px;
+  margin: 8px 0 0;
+}
+.received_withd_msg { width: 57%;}
+.mesgs {
+  float: left;
+  padding: 30px 15px 0 25px;
+  width: 60%;
+}
+
+ .sent_msg p {
+  background: #05728f none repeat scroll 0 0;
+  border-radius: 3px;
+  font-size: 14px;
+  margin: 0; color:#fff;
+  padding: 5px 10px 5px 12px;
+  width:100%;
+}
+.outgoing_msg{ overflow:hidden; margin:26px 0 26px;}
+.sent_msg {
+  float: right;
+  width: 46%;
+}
+.input_msg_write input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: medium none;
+  color: #4c4c4c;
+  font-size: 15px;
+  min-height: 48px;
+  width: 100%;
+}
+
+.type_msg {border-top: 1px solid #c4c4c4;position: relative;}
+.msg_send_btn {
+  background: #05728f none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 33px;
+}
+.messaging { padding: 0 0 50px 0;}
+.msg_history {
+  height: 516px;
+  overflow-y: auto;
+}

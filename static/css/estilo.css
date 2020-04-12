@@ -1,0 +1,97 @@
+h1{
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+}
+
+button{
+	float: none;
+	text-align: center;
+	margin: auto;
+	display: block;
+}
+
+#volver{
+	float: none;
+	text-align: center;
+	margin: auto;
+	display: block;
+}
+
+.redes{
+	float: none;
+	text-align: center;
+}
+
+.politicas{
+	border : solid 2px black;
+	background : #f8f9fa;
+	color : #ffffff;
+	padding : 4px;
+	width : 450px;
+	height : 500px;
+	overflow : auto; ">
+}
+
+p{
+	color: black;
+}
+
+h4{
+	color: #14b9d3;
+}
+
+#none{
+	color: black;
+}
+
+#perfil{
+	border-radius: 1000px;
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	display: block;
+}
+
+.caja{
+	width: 1065px;
+}
+
+#btnPublicar{
+	position: relative;
+	bottom: 77px;
+	left: 485px;
+	height: 50px;
+	width: 100px;
+}
+
+footer{
+	text-align: center;
+}
+
+#boton{
+	border: 2px solid transparent; /*anchura, estilo y color borde*/
+	padding: 0; /*espacio alrededor texto*/
+	background-color: #778899; /*color botón*/
+	color: #7A0707; /*color texto*/
+	text-decoration: none; /*decoración texto*/
+	text-transform: uppercase; /*capitalización texto*/
+	font-family: 'Helvetica', sans-serif;
+}
+
+#boton2{
+	border: 2px solid transparent; /*anchura, estilo y color borde*/
+	padding: 0; /*espacio alrededor texto*/
+	background-color: #778899; /*color botón*/
+	color: #7A0707; /*color texto*/
+	text-decoration: none; /*decoración texto*/
+	font-family: 'Helvetica', sans-serif;
+}
+
+.logo{
+
+height: 50px;
+}
+

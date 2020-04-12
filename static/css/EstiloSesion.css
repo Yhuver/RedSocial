@@ -1,0 +1,37 @@
+h1{
+	position: relative;
+	left: 110px;
+	top: 80px;
+}
+
+.logo{
+	width: 100px; height: 100px;
+}
+
+#cmdBuscar{
+	background-color: #17a2b8;
+	color: white;
+	border : solid 1px #17a2b8;
+}
+
+.imgWrapper4, .imgWrapper3 {
+    font-size: 0;
+    text-align: center;
+}
+.imgWrapper4 .imgResponsiva,
+.imgWrapper3 .imgResponsiva {
+    display: inline-block;
+    font-size: inherit;
+}
+.imgWrapper4 .imgResponsiva {width: 25%; max-width: 345px;}
+.imgWrapper3 .imgResponsiva {width: 33.3%; max-width: 345px;}
+
+.imgResponsiva img {
+    height: auto;
+    width: 100%;
+}
+
+#upload{
+	background-color: #17a2b8;
+	color: white;
+}

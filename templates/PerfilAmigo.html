@@ -1,0 +1,233 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instagram</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/	bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="icon" href="images/icon.png" />
+
+</head>
+<body>
+
+
+<header>
+
+<div class="h-header">
+	<div class="h-logo"><a href="##"><img src="images/instagram.png" width="200" ></a></div>
+	<div class="h-search">
+		<form method="POST" action="buscar.php" onSubmit="return validarForm(this)">
+			<input type="text" placeholder="Buscar" class="search" name="palabra">
+			
+		</form>
+	</div>
+	<div class="h-account">
+
+		<form action="PerfilAmigo - copia.php">
+			<button style="border: 2px solid transparent;text-decoration: none; padding: 0;
+				background-color: transparent;
+				color: #007bff; position: relative; left: -30px; top: 6px;">
+				<img src="images/perfil.png" class="i-icon">
+			</button>
+
+			<a href="##" style="position: relative; bottom: 20px; left: 85px">
+				<img src="images/mail.png" class="i-icon" width="55px">
+			</a>
+		</form>
+
+		<form action="mensaje/mensaje2.php">
+			<button style="border: 2px solid transparent;text-decoration: none; padding: 0;
+				background-color: transparent;
+				color: #007bff; position: relative; left: 15px; bottom: 45px" type="submit">
+				<img src="images/enviarMensajes.png" class="i-icon" width="50px">
+			</button>
+		</form>
+
+		<form action="publicacion/publicacion.php">
+			<button style="border: 2px solid transparent;text-decoration: none; padding: 0;
+				background-color:transparent;
+				color: #007bff; position: relative; bottom: 70px; left: 50px;">
+				<img src="images/publicar.png" class="i-icon" width="50px">
+			</button>
+		</form>
+
+			<a href="logout.php"  style="position: relative; bottom: 95px; left: 250px">
+				<img src="images/close.png" class="i-icon" width="50px">
+			</a>
+	</div>
+</div>
+
+
+<div style="height: 50px" ></div>
+	<div class="container">
+		<div class="row">
+			<header class="col-12">
+				<h1>Instagram</h1>
+			</header>
+		</div>
+	</div>
+</header>
+
+
+			
+<div class="container">
+	<div class="row">
+		<section class="col-6">
+			<img id="perfil" src=<?php echo "$imagenPerfil"; ?>>
+				<form action="addImagenPerfil.php" method="POST" enctype="multipart/form-data">
+						<input type="hidden" name="id" value="<?php echo $id; ?>">
+						<input type="file" name="file"><br/>
+						<input type="submit" name="enviar"><br/>
+				
+				</form>
+				<br>
+		</section>
+
+		<section class="col-6">
+				<h2></h2>
+				<form action="addSeguir.php" method="POST">
+					
+					<input type="hidden" name="idUsuario" value="<?php echo $id;?>">
+					<input type="hidden" name="idAmigo" value="<?php echo $prueba;?>">
+					
+					<center>
+					<input style="color: black;background-color: #00bfff;width: 100px; border: 2px solid transparent;padding: 0;border-radius: 500px;" type="submit" 	   	name="Seguir" value = "seguir"><br/>
+					</center>
+						
+					<input type="hidden" name="Seguir" value = "seguir"><br/>
+					
+					<center>
+					<input style="color: black;background-color: #8CDBB9;width: 100px; border: 2px solid transparent;padding: 0;border-radius: 500px;" type="submit" 	   	name="seguidor" value = "seguidor"><br/>
+					</center>
+
+
+				</form>
+
+
+				<h3 style="color: black;"></h3>
+				<h4 style="font-size: 20px; color: black;" id="none"></h>
+				<h5><form action="seguidores.php" method="POST">
+					<input type="hidden" name="idUsuario" value="<?php echo $id;?>">
+					<input type="hidden" name="idAmigo" value="<?php echo $prueba;?>">
+					<h5 style="font-size: 20px; color: black;"><input style="border: 2px solid transparent;text-decoration: none; padding: 0;
+						background-color: #fff;
+						color: #007bff; color: black; font-size: 20px;" type="submit" name="" value="Seguidores">: <?php echo "$numeroS"; ?></h5>
+					</form></h5>
+
+				<h5><form action="siguiendo.php" method="POST">
+					<input type="hidden" name="idUsuario" value="<?php echo $id;?>">
+					<input type="hidden" name="idAmigo" value="<?php echo $prueba;?>">
+					<h5 style="font-size: 20px; color: black;"><input style="border: 2px solid transparent;text-decoration: none; padding: 0;
+					background-color: #fff;
+					color: #007bff; color: black; font-size: 20px;" type="submit" name="" value="Siguiendo">:</h5>
+					</form></h5>
+
+
+				<h5 style="font-size: 20px; color: black;"></h5>
+			</section>
+<!-- 			/*Fin encabezado de perfil*/
+-->
+
+	<div class="container">
+			<div class="row">
+				<section class="col-12">
+					
+					<div class="card mb-3">
+						<header>
+							<form action="PerfilAmigo.php" method="POST">
+								<img src="<?php echo $imagenPerfil; ?>" style="height: 50px; width: 50px; border-radius: 1000px">
+
+									<input id="boton" type = "hidden" name = "user" value = "<?php echo $idUserPub ?>">
+										<input  style="border: 2px solid transparent; /*anchura, estilo y color borde*/
+											padding: 0; /*espacio alrededor texto*/
+											background-color: #fff; /*color botón*/
+											color: #007bff; /*color texto*/
+											text-decoration: none; /*decoración texto*/
+											font-family: "Helvetica", sans-serif;" id="boton2" type="submit" value = "<?php  echo $row2['usuario'] ?>" >
+							</form>
+						</header>
+					
+
+								<img src="publicacion/imagenPublicacion/<?php echo $row['imagen'] ?>" class="card-img-top" alt="..." width="100%"; height="500">
+						
+						<div class="card-body">
+							
+								<p href="PerfilAmigo.php" class="card-text"><b>
+								</p>
+
+								<p class="card-text"><small class="text-muted"></small></p>
+						</div>
+
+
+						<form method="POST" action="">
+								<input class="enviar-btn form-control input-sm" placeholder="Escribe tu comentario" name="comentario" style="" />
+								<input type="hidden" name="publicacion" id="publicacion" value="<?php echo $row['id']?>">
+								<input style="background: #00bfff" type="submit" value="Publicar" class="btn" name="registro_comentario" />
+						</form>
+
+<div class="panel-group">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a data-toggle="collapse" href="#collapse<?php echo $row['id']; ?>">Ver Comentarios</a>
+			</h4>
+		</div>
+										
+	<div id="collapse<?php echo $row['id']; ?>" class="panel-collapse collapse">
+		<ul class="list-group">
+												<?php
+												$sqlComentarios = $con->query("SELECT * FROM comentario WHERE publicacion = '".$row['id']."'");
+												while($rowComentarios = $sqlComentarios->fetch_array()){
+
+													$sqlUser = $con->query("SELECT * FROM usuario WHERE id = '".$rowComentarios['usuario']."'");
+													$rowUser=$sqlUser->fetch_array();
+													?
+			<li class="list-group-item">
+	
+	<div class="box-comment">
+		<span class="username">
+		<b><?php echo $rowUser['usuario'] . ": " . "</b>" . $rowComentarios['comentario'];?> 
+		</span>
+
+	<div class="avatar" style="background-image: url(images/cat.jpg)"></div>
+    <div class="comment-text">
+		<br>
+			<em><?php echo $rowComentarios['fechapublicacion'];?></em>	
+	</div>
+	<br>
+		</div>
+		</li>
+		</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+		</section>
+		</b>
+		</p>
+		</div>
+		</div>
+		</section>
+		</div>
+		</div>
+		</h4>
+		</section>
+		</div>
+		</div>
+
+
+
+<div class="footer">
+		<footer>Instagram©2020 </footer>
+	</div>
+
+
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
