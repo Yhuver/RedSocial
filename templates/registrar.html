@@ -37,11 +37,11 @@
 			<div class="login100-more" style="background-image: url('/static/images/bg-02.jpg');"></div>
 
 			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="POST" action="/magistagram/registrarUsuario/">
 					<span class="login100-form-title p-b-59">
 						Registrarse
 					</span>
-
+					{% csrf_token %}
 					<div class="wrap-input100 validate-input" data-validate="Nombre Requerido">
 						<span class="label-input100">Nombre Completo</span>
 						<input class="input100" type="text" name="name" placeholder="Nombre...">
@@ -62,7 +62,7 @@
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
 						<span class="label-input100">Contraseña</span>
-						<input class="input100" type="text" name="pass" placeholder="*************">
+						<input class="input100" type="password" name="pass" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
