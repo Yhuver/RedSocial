@@ -48,18 +48,18 @@
   			 
 			{% endif %}
 
-			<form class="login100-form validate-form">
+			<form class="login100-form validate-form" method="POST" action="/magistagram/logeo/">
 				<span class="login100-form-title p-b-37">
 					Iniciar Sesion
 				</span>
-
+				{% csrf_token %}
 				<div class="wrap-input100 validate-input m-b-20" data-validate="Digite Su Usuario">
-					<input class="input100" type="text" name="Usuario" placeholder="Usuario">
+					<input class="input100" type="text" name="usename" placeholder="Usuario">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input m-b-25" data-validate = "Digite Su Contraseña">
-					<input class="input100" type="password" name="Contrasena" placeholder="Contraseña">
+					<input class="input100" type="password" name="password" placeholder="Contraseña">
 					<span class="focus-input100"></span>
 				</div>
 

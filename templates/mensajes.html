@@ -1,14 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Instagram</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="{%static'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous'%}">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/estilo.css' %}">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="{%static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' %}" type="text/css" rel="stylesheet">
+	<link href="{%static '//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' %}" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="icon" href="images/icon.png" />
@@ -52,12 +53,12 @@
 			<button style="border: 2px solid transparent;text-decoration: none; padding: 0;
 				background-color:transparent;
 				color: #007bff; position: relative; bottom: 78px; left: 70px;">
-				<img src="images/publicar.png" class="i-icon" width="50px">
+				<img src="{%static 'images/publicar.png'%}" class="i-icon" width="50px">
 			</button>
 		</form>
 
 			<a href="logout.php"  style="position: relative; bottom: 105px; left: 250px">
-				<img src="images/close.png" class="i-icon" width="50px">
+				<img src="{%static 'images/close.png' %}" class="i-icon" width="50px">
 			</a>
 	</div>
 </div>

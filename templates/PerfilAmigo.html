@@ -1,12 +1,12 @@
-﻿
+﻿{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Instagram</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/estilo.css'%}">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/style.css' %}">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/	bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -19,7 +19,7 @@
 <header>
 
 <div class="h-header">
-	<div class="h-logo"><a href="##"><img src="images/instagram.png" width="200" ></a></div>
+	<div class="h-logo"><a href="##"><img src="{%static 'images/instagram.png'%}" width="200" ></a></div>
 	<div class="h-search">
 		<form method="POST" action="buscar.php" onSubmit="return validarForm(this)">
 			<input type="text" placeholder="Buscar" class="search" name="palabra">
@@ -57,7 +57,7 @@
 		</form>
 
 			<a href="logout.php"  style="position: relative; bottom: 95px; left: 250px">
-				<img src="images/close.png" class="i-icon" width="50px">
+				<img src="{%static 'images/close.png' %}" class="i-icon" width="50px">
 			</a>
 	</div>
 </div>
@@ -194,7 +194,7 @@
 		<b><?php echo $rowUser['usuario'] . ": " . "</b>" . $rowComentarios['comentario'];?> 
 		</span>
 
-	<div class="avatar" style="background-image: url(images/cat.jpg)"></div>
+	<div class="avatar" style="background-image: url(static/images/cat.jpg)"></div>
     <div class="comment-text">
 		<br>
 			<em><?php echo $rowComentarios['fechapublicacion'];?></em>	

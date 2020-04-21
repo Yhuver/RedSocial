@@ -1,25 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Instagram</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/publicacion.css">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/estilo.css'%}">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/publicacion.css'%}">
 
 	
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<link rel="icon" href="images/icon.png" />
+	<link rel="icon" href="{%static 'images/icon.png'%}" />
 	
 </head>
 <body>
 
 <div class="h-header">
-	<div class="h-logo"><a href="##"><img src="images/instagram.png" width="200" ></a></div>
+	<div class="h-logo"><a href="##"><img src="{%static 'images/instagram.png'%}" width="200" ></a></div>
 	
 
 	<div class="h-account">
@@ -28,11 +29,11 @@
 			<button style="border: 2px solid transparent;text-decoration: none; padding: 0;
 				background-color: transparent;
 				color: #007bff; position: relative; left: -59px; top: 6px;">
-				<img src="images/perfil.png" class="i-icon">
+				<img src="{%static 'images/perfil.png'%}" class="i-icon">
 			</button>
 
 			<a href="##" style="position: relative; bottom: 20px; left: 85px">
-				<img src="images/mail.png" class="i-icon" width="55px">
+				<img src="{%static ''%}images/mail.png" class="i-icon" width="55px">
 			</a>
 		</form>
 
@@ -40,7 +41,7 @@
 			<button style="border: 2px solid transparent;text-decoration: none; padding: 0;
 				background-color: transparent;
 				color: #007bff; position: relative; left: 20px; bottom: 45px" type="submit">
-				<img src="images/enviarMensajes.png" class="i-icon" width="50px">
+				<img src="{%static ''%}images/enviarMensajes.png" class="i-icon" width="50px">
 			</button>
 		</form>
 
@@ -48,12 +49,12 @@
 			<button style="border: 2px solid transparent;text-decoration: none; padding: 0;
 				background-color:transparent;
 				color: #007bff; position: relative; bottom: 68px; left: 65px;">
-				<img src="images/publicar.png" class="i-icon" width="50px">
+				<img src="{%static ''%}images/publicar.png" class="i-icon" width="50px">
 			</button>
 		</form>
 
 			<a href="logout.php"  style="position: relative; bottom: 60px; left: 240px">
-				<img src="images/close.png" class="i-icon" width="50px">
+				<img src="{%static ''%}images/close.png" class="i-icon" width="50px">
 			</a>
 	</div>
 </div>
